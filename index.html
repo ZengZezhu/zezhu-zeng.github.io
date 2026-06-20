@@ -271,7 +271,7 @@
   <section id="about">
     <div class="sec-header">About me</div>
     <div class="about-text">
-      <p>I am a computational materials scientist currently based at the University of Oxford as a Newton International Fellow, working with <a href="https://manolopoulos.chem.ox.ac.uk/" target="_blank" rel="noopener">Prof. David Manolopoulos</a> in the Department of Chemistry. My research sits at the intersection of condensed matter physics, materials science, and machine learning — with a particular focus on understanding how heat moves through matter at the atomic scale.</p>
+      <p>I am a computational materials scientist currently based at the University of Oxford as a Newton International Fellow, working with <a href="https://manolopoulos.chem.ox.ac.uk/" target="_blank" rel="noopener">Prof. David Manolopoulos FRS</a> in the Department of Chemistry. My research sits at the intersection of condensed matter physics, materials science, and machine learning — with a particular focus on understanding how heat moves through matter at the atomic scale.</p>
       <p>I completed my PhD at the University of Hong Kong under <a href="https://meweb.hku.hk/~yuechen/" target="_blank" rel="noopener">Prof. Yue Chen</a>, before holding a Marie Skłodowska-Curie Fellowship at IST Austria with <a href="https://sites.google.com/site/tonicbq/" target="_blank" rel="noopener">Prof. Bingqing Cheng</a>. Over the years I have worked on topics ranging from ultralow thermal conductivity in crystalline materials and glassy heat transport in perovskites, to water dissociation on oxide surfaces using machine-learning molecular dynamics.</p>
       <p>I am passionate about developing and applying machine-learning interatomic potentials to solve problems that traditional methods cannot easily reach — bringing together the accuracy of first-principles theory with the scale of classical simulations.</p>
     </div>
@@ -413,7 +413,23 @@
     <div class="sec-header">Selected work</div>
     <p class="work-intro">A few projects that best capture the questions I care about. For the complete and continuously updated list of publications, see my <a href="https://scholar.google.co.uk/citations?user=3rOftLwAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar profile</a>.</p>
 
-    <!-- Work 01 — Water dissociation -->
+   <!-- Work — Lattice heat transport in strongly anharmonic materials -->
+    <article class="work-card">
+      <div class="work-fig">
+        <img src="images/work-anharmonic.png" alt="Phonon spectral density beyond perturbation theory" onerror="this.closest('.work-fig').classList.add('fig-pending'); this.remove();">
+        <span class="fig-pending-label"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5"/><circle cx="5.5" cy="6" r="1.2"/><path d="M2 11l3.5-3 3 2.5L11 7l3 3.5"/></svg>images/work-anharmonic.png</span>
+      </div>
+      <div class="work-body">
+        <div class="work-num">02</div>
+        <h3 class="work-title">Heat transport in strongly anharmonic materials</h3>
+        <div class="work-authors"><strong>Zezhu Zeng</strong>, M. Simoncelli, D. E. Manolopoulos</div>
+        <div class="work-venue">arXiv:2604.19615 (2026)</div>
+        <p class="work-desc">We introduce a molecular-dynamics route to the phonon spectral function that goes beyond standard perturbation theory. Because classical dynamics reproduces the exact quantum (Kubo-transformed) correlator for harmonic modes, the method extends cleanly to strongly anharmonic crystals — capturing both sharp quasiparticle peaks and broad non-Lorentzian lineshapes, and connecting directly to Wigner heat transport. Benchmarked on PbTe and on the strongly anharmonic halide Cs₃Bi₂I₆Cl₃, it reproduces measured thermal conductivities.</p>
+        <a class="work-link" href="https://arxiv.org/abs/2604.19615" target="_blank" rel="noopener">Read the preprint →</a>
+      </div>
+    </article>
+   
+    <!-- Work — Water dissociation and its visualization from Machine learning techniques -->
     <article class="work-card">
       <div class="work-fig">
         <img src="images/work-water.png" alt="Water dissociation mechanisms on low-index TiO2 surfaces" onerror="this.closest('.work-fig').classList.add('fig-pending'); this.remove();">
@@ -429,23 +445,7 @@
       </div>
     </article>
 
-    <!-- Work 02 — Heat transport in strongly anharmonic materials -->
-    <article class="work-card">
-      <div class="work-fig">
-        <img src="images/work-anharmonic.png" alt="Phonon spectral density beyond perturbation theory" onerror="this.closest('.work-fig').classList.add('fig-pending'); this.remove();">
-        <span class="fig-pending-label"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5"/><circle cx="5.5" cy="6" r="1.2"/><path d="M2 11l3.5-3 3 2.5L11 7l3 3.5"/></svg>images/work-anharmonic.png</span>
-      </div>
-      <div class="work-body">
-        <div class="work-num">02</div>
-        <h3 class="work-title">Heat transport in strongly anharmonic materials</h3>
-        <div class="work-authors"><strong>Zezhu Zeng</strong>, M. Simoncelli, D. E. Manolopoulos</div>
-        <div class="work-venue">arXiv:2604.19615 (2026)</div>
-        <p class="work-desc">We introduce a molecular-dynamics route to the phonon spectral function that goes beyond standard perturbation theory. Because classical dynamics reproduces the exact quantum (Kubo-transformed) correlator for harmonic modes, the method extends cleanly to strongly anharmonic crystals — capturing both sharp quasiparticle peaks and broad non-Lorentzian lineshapes, and connecting directly to Wigner heat transport. Benchmarked on PbTe and on the strongly anharmonic halide Cs₃Bi₂I₆Cl₃, it reproduces measured thermal conductivities.</p>
-        <a class="work-link" href="https://arxiv.org/abs/2604.19615" target="_blank" rel="noopener">Read the preprint →</a>
-      </div>
-    </article>
-
-    <!-- Work 03 — Glassy heat transport in lattice-distorted crystals -->
+    <!-- Work — Glassy heat transport in lattice-distorted crystals -->
     <article class="work-card">
       <div class="work-fig">
         <img src="images/work-distortion.png" alt="Glassy thermal transport in crystalline Cs3Bi2I6Cl3" onerror="this.closest('.work-fig').classList.add('fig-pending'); this.remove();">
