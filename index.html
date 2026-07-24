@@ -413,6 +413,23 @@
     <div class="sec-header">Selected work</div>
     <p class="work-intro">A few projects that best capture the questions I care about. For the complete and continuously updated list of publications, see my <a href="https://scholar.google.co.uk/citations?user=3rOftLwAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar profile</a>.</p>
 
+   <!-- Work — Economised path integrals -->
+    <article class="work-card">
+      <div class="work-fig">
+        <img src="work-eco.png" alt="Economised path integrals: fewer ring-polymer beads, same quantum result" onerror="this.closest('.work-fig').classList.add('fig-pending'); this.remove();">
+        <span class="fig-pending-label"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5"/><circle cx="5.5" cy="6" r="1.2"/><path d="M2 11l3.5-3 3 2.5L11 7l3 3.5"/></svg>work-eco.png</span>
+      </div>
+      <div class="work-body">
+        <div class="work-num">01</div>
+        <h3 class="work-title">Economised path integrals</h3>
+        <div class="work-authors"><strong>Zezhu Zeng</strong>, D. E. Manolopoulos</div>
+        <div class="work-venue">arXiv:2607.06414 (2026)</div>
+        <p class="work-desc">Path integral molecular dynamics is the gold standard for nuclear quantum effects, but the standard Trotter discretisation converges slowly in the number of ring-polymer beads <em>P</em> — often making a calculation orders of magnitude costlier than classical MD. We show that the bead spring matrix leaves half of the ring-polymer normal-mode frequencies free, and fix them by a least-squares fit to the exact quantum radii of gyration of harmonic oscillators. The resulting economised (&ldquo;Eco&rdquo;) path integral — whose springs couple every bead, not only nearest neighbours — converges like the fourth-order Suzuki&ndash;Chin scheme at ordinary second-order Trotter cost, with no projected Hessians, no new estimators, and only a few changed lines of code. We demonstrate it on hexagonal ice and, through a GPUMD implementation with a machine-learned potential, on the negative thermal expansion and heat capacity of MOF-5.</p>
+        <a class="work-link" href="https://arxiv.org/abs/2607.06414" target="_blank" rel="noopener">Read the preprint &rarr;</a>
+        <a class="work-link" href="https://github.com/ZengZezhu/Eco-Path-Integrals-in-GPUMD" target="_blank" rel="noopener" style="margin-left:1.15rem;">Code: GPUMD patch &rarr;</a>
+      </div>
+    </article>
+
    <!-- Work — Lattice heat transport beyond perturbation theory -->
     <article class="work-card">
       <div class="work-fig">
@@ -420,7 +437,7 @@
         <span class="fig-pending-label"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5"/><circle cx="5.5" cy="6" r="1.2"/><path d="M2 11l3.5-3 3 2.5L11 7l3 3.5"/></svg>images/work-anharmonic.png</span>
       </div>
       <div class="work-body">
-        <div class="work-num">01</div>
+        <div class="work-num">02</div>
         <h3 class="work-title">Heat transport beyond perturbation theory</h3>
         <div class="work-authors"><strong>Zezhu Zeng</strong>, M. Simoncelli, D. E. Manolopoulos</div>
         <div class="work-venue">arXiv:2604.19615 (2026)</div>
@@ -436,7 +453,7 @@
         <span class="fig-pending-label"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5"/><circle cx="5.5" cy="6" r="1.2"/><path d="M2 11l3.5-3 3 2.5L11 7l3 3.5"/></svg>images/work-water.png</span>
       </div>
       <div class="work-body">
-        <div class="work-num">02</div>
+        <div class="work-num">03</div>
         <h3 class="work-title">Water dissociation visualization from Machine learning techniques</h3>
         <div class="work-authors"><strong>Zezhu Zeng</strong>, F. Wodaczek, K. Liu, F. Stein, J. Hutter, J. Chen, B. Cheng</div>
         <div class="work-venue">Nature Communications 14, 6131 (2023)</div>
@@ -452,7 +469,7 @@
         <span class="fig-pending-label"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5"/><circle cx="5.5" cy="6" r="1.2"/><path d="M2 11l3.5-3 3 2.5L11 7l3 3.5"/></svg>images/work-distortion.png</span>
       </div>
       <div class="work-body">
-        <div class="work-num">03</div>
+        <div class="work-num">04</div>
         <h3 class="work-title">Glassy heat transport in lattice-distorted crystals</h3>
         <div class="work-authors"><strong>Zezhu Zeng</strong>, Z. Fan, M. Simoncelli, C. Chen, T. Liang, Y. Chen, G. Thornton, B. Cheng</div>
         <div class="work-venue">Proc. Natl. Acad. Sci. U.S.A. 122, e2415664122 (2025)</div>
