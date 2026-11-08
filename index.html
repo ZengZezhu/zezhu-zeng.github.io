@@ -272,6 +272,8 @@
         url("bg-sky-portrait.jpg") 30% top / cover no-repeat;
     }
   }
+  nav ul { gap: 2rem; }
+  nav ul a { font-size: 15.5px; }
   nav { background: rgba(255,255,255,0.72); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom-color: rgba(255,255,255,0.5); }
   .hero { border-bottom: none; padding: 5rem 0 3.5rem; }
   .hero h1 { color: #fff; text-shadow: 0 1px 14px rgba(8,28,64,0.35); }
@@ -285,6 +287,12 @@
     border-radius: 18px;
     margin: 0 -2rem 3rem; padding: 0 2.5rem;
     box-shadow: 0 10px 40px rgba(8,28,64,0.18);
+  }
+  /* Content panel attached to the left edge on wide screens */
+  @media (min-width: 900px) {
+    nav .inner { margin: 0; max-width: 960px; padding: 0 2.5rem 0 4rem; }
+    .page { margin: 0; max-width: 960px; padding: 0 2.5rem 0 4rem; }
+    .sheet { margin: 0 -2rem 3rem -4rem; padding: 0 2.5rem 0 4rem; border-radius: 0 18px 18px 0; }
   }
   @media (max-width: 600px) {
     .page { padding: 0 0.75rem; }
@@ -388,13 +396,6 @@ to metal–organic frameworks, quantum solids, and water–oxide interfaces.</p>
         <div class="tl-title">Newton International Fellow</div>
         <div class="tl-place">University of Oxford, Department of Chemistry · UK</div>
         <div class="tl-detail">Collaborator: <a href="https://manolopoulos.chem.ox.ac.uk/" target="_blank" rel="noopener">Prof. David Manolopoulos</a></div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">03/2025 – 11/2025</div>
-        <div class="tl-title">Postdoctoral Researcher</div>
-        <div class="tl-place">The University of Hong Kong, Department of Mechanical Engineering</div>
-        <div class="tl-detail">Collaborator: <a href="https://meweb.hku.hk/~yuechen/" target="_blank" rel="noopener">Prof. Yue Chen</a></div>
       </div>
       <div class="tl-item">
         <div class="tl-dot"></div>
