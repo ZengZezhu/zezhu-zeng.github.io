@@ -256,6 +256,41 @@
     .avatar-ring { display: none; }
     nav ul { display: none; }
   }
+
+  /* ── Sky background ── */
+  body { background: #5b9cf3; }
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -1;
+    background:
+      linear-gradient(90deg, rgba(10,32,72,0.38) 0%, rgba(10,32,72,0.16) 50%, rgba(10,32,72,0) 85%),
+      url("bg-sky.jpg") right top / cover no-repeat;
+  }
+  @media (orientation: portrait) {
+    body::before {
+      background:
+        linear-gradient(90deg, rgba(10,32,72,0.40) 0%, rgba(10,32,72,0.20) 60%, rgba(10,32,72,0.08) 100%),
+        url("bg-sky-portrait.jpg") 30% top / cover no-repeat;
+    }
+  }
+  nav { background: rgba(255,255,255,0.72); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom-color: rgba(255,255,255,0.5); }
+  .hero { border-bottom: none; padding: 5rem 0 3.5rem; }
+  .hero h1 { color: #fff; text-shadow: 0 1px 14px rgba(8,28,64,0.35); }
+  .hero .position { color: rgba(255,255,255,0.92); font-weight: 400; text-shadow: 0 1px 8px rgba(8,28,64,0.35); }
+  .hero .position strong { color: #fff; }
+  .hero .contact-links a { background: rgba(255,255,255,0.9); border-color: rgba(255,255,255,0.9); color: var(--text); }
+  .hero .news { border-color: rgba(255,255,255,0.9); box-shadow: 0 4px 18px rgba(8,28,64,0.15); }
+  .avatar-ring { border: 3px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(8,28,64,0.25); }
+  .sheet {
+    background: var(--bg);
+    border-radius: 18px;
+    margin: 0 -2rem 3rem; padding: 0 2.5rem;
+    box-shadow: 0 10px 40px rgba(8,28,64,0.18);
+  }
+  @media (max-width: 600px) {
+    .page { padding: 0 0.75rem; }
+    .hero { padding: 3.5rem 0.5rem 2.5rem; }
+    .sheet { margin: 0 0 1.5rem; padding: 0 1.25rem; border-radius: 14px; }
+  }
 </style>
 </head>
 <body>
@@ -297,6 +332,8 @@
   </div>
 
   <!-- About -->
+  <div class="sheet">
+
   <section id="about">
     <div class="sec-header">About me</div>
     <div class="about-text">
@@ -531,6 +568,8 @@ to metal–organic frameworks, quantum solids, and water–oxide interfaces.</p>
   <footer>
     <p>Dr. Zezhu Zeng · University of Oxford · zezhu.zeng@chem.ox.ac.uk</p>
   </footer>
+
+  </div><!-- /sheet -->
 
 </div>
 
